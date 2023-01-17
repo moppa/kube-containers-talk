@@ -1,0 +1,10 @@
+services:
+  js-demo:
+    container_name: demo
+    image: ${REGISTRY}demo:${TAG-local}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - '3300:3000'

@@ -1,0 +1,1 @@
+helm upgrade --install k-4 ./charts/web-demo/ --dry-run | code -
